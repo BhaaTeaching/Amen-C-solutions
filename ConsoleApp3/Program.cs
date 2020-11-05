@@ -6,152 +6,179 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            //Q1 
-             int[] arr1 = new int[3];
-             int sum1 = 0;
-             Console.WriteLine("Enter 3 numbers :");
-             for(int i=0; i<arr1.Length; i++)
-             {
-                 arr1[i] = int.Parse(Console.ReadLine());
-                 if(arr1[i] < 0)
-                 {
-                     sum1 = sum1 + arr1[i];
-                 }
-             }
-             Console.WriteLine(" Sum  = {0}", sum1);
-            //----------------------------------------------------------------------------------------------
-            //Q2
-                String[] animalsArr = { "Dog", "Cat", "Fox", "Elephant" };
-                String[] copyAnimalsArr = new string[3];
-                for(int i=0; i< animalsArr.Length; i++)
-                {
-                    copyAnimalsArr[i] = animalsArr[i];
-                }
-            //----------------------------------------------------------------------------------------------
-            //Q3
-             int[] numbersArr = new int[5];
-             int[] oddsArr = new int[5];
-             int[] evenArr = new int[5];
 
-             Console.WriteLine(" Enter 5 integer numbers  ");
-             for(int i=0; i<numbersArr.Length; i++)
-             {
-                 numbersArr[i] = int.Parse(Console.ReadLine());
-                 if (numbersArr[i] % 2 == 0)
-                 {
-                     evenArr[i] = numbersArr[i];
-                 }
-                 else
-                 {
-                     oddsArr[i] = numbersArr[i];
-                 }
-             }
-             Console.WriteLine(" Even numbers : ");
-             for (int i = 0; i < evenArr.Length; i++)
-             {
-                 if (evenArr[i] != 0)
-                 {
-                     Console.WriteLine(evenArr[i]);
-                 }
-             }
-             Console.WriteLine(" Odd numbers : ");
-             for (int i = 0; i < oddsArr.Length; i++)
-             {
-                 if (oddsArr[i] != 0)
-                 {
-                     Console.WriteLine(oddsArr[i]);
-                 }
-             }
-            
-            //----------------------------------------------------------------------------------------------
+            //Q2
+              int number1, sum1 = 0;
+              Console.WriteLine("Enter number : ");
+              number1 = int.Parse(Console.ReadLine());
+              for(int i=0;i<=number1; i++)
+              {
+                  if(i % 2 ==0 && i % 3 == 0)
+                  {
+                      sum1 = sum1 + i;
+                  }
+              }
+              Console.WriteLine("The sum is = " + sum1);
+            //-----------------------------------------------------------------------------------------------------------
+
+            //Q3
+              for(int i=2; i<=100; i=i+2)
+              {
+                  Console.WriteLine(i);
+              }
+            //-----------------------------------------------------------------------------------------------------------
             //Q4
-              int[] arr4 = { 2, 3, 4, 5, 6 };
-              for(int i = 0; i<arr4.Length; i++)
-              {
-                  arr4[i] = 2 * arr4[i];
+             for (int i = 1; i <= 100; i++)
+             {
+                  if (i % 2 != 0)
+                  {
+                      Console.WriteLine(i);
+                  }
               }
-              Console.WriteLine("The duplicate array : ");
-              for (int i = 0; i < arr4.Length; i++)
-              {
-                  Console.Write(arr4[i] + " ");
-              }
-            //----------------------------------------------------------------------------------------------
+            //-----------------------------------------------------------------------------------------------------------
             //Q5
-              int[] arr5 = { 2, 3, 4, 5, 6 };
-              for (int i = 0; i < arr5.Length; i++)
-              {
-                  arr5[i] = 2 * arr5[i];
-              }
-              Console.WriteLine("The reverse duplicate array : ");
-              for (int i = arr5.Length-1; i >= 0 ; i--)
-              {
-                  Console.Write(arr5[i] + " ");
-              }
-            //----------------------------------------------------------------------------------------------
+             int max, number;
+             max = int.Parse(Console.ReadLine());
+             Console.WriteLine("Enter 50 numbers : ");
+             for(int i = 1; i<50; i++)
+             {
+                 number = int.Parse(Console.ReadLine());
+                 if(number > max)
+                 {
+                     max = number;
+                 }
+             }
+             Console.WriteLine("Max = " + max);
+            //-----------------------------------------------------------------------------------------------------------
             //Q6
-              int[] arr6 = { 2, 3, 4, 5, 6 };
-              int max6 = arr6[0];
-              int min6 = arr6[0];
-              //هون مندور على اكبر قيمة
-              for (int i = 1; i < arr6.Length; i++)
+             int max, number = 0;
+              max = int.Parse(Console.ReadLine());
+             Console.WriteLine("Enter numbers : ");
+              while ( number >= 0)
               {
-                if(arr6[i] > max6)
+                  number = int.Parse(Console.ReadLine());
+                  if(number > max)
                   {
-                      max6 = arr6[i];
+                      max = number;
                   }
               }
-              //هون مندور على اصغر قيمة
-              for (int i = 1; i < arr6.Length; i++)
-              {
-                  if (arr6[i] < min6)
-                  {
-                      min6 = arr6[i];
-                  }
-              }
-              Console.WriteLine("Max number = {0}, Min number = {1} ", max6, min6);
-            //----------------------------------------------------------------------------------------------
+              Console.WriteLine("Max = " + max);
+            //-----------------------------------------------------------------------------------------------------------
             //Q7
-             int[] arr7 = { 2, 3, 4, 5, 6 };
-             int sum = 0;
-             for (int i = 0; i < arr7.Length; i++)
+              int grade = 0, sum = 0, counter = 0;
+              Console.WriteLine("Enter the grades : ");
+              while(grade>=0 && grade <= 100)
+              {
+                  grade = int.Parse(Console.ReadLine());
+                  if(grade >= 0 && grade <= 100)
+                  {
+                      sum = sum + grade;
+                      counter++;
+                  }
+              }
+              Console.WriteLine("Grade = " + (double)sum / counter);
+            //-----------------------------------------------------------------------------------------------------------
+            //Q8.1
+             for(int i=25; i<=50; i++)
              {
-                 sum = sum +arr7[i];
+                 if(i%5 == 0 && i%7 == 0)
+                 {
+                     Console.WriteLine(i);
+                 }
              }
-             Console.WriteLine("Sum = " + sum + " The avg = " + (double)sum / arr7.Length);
-            //----------------------------------------------------------------------------------------------
-            //Q8
-             int[] arr8 = new int[5];
-             int[] reverseArr8 = new int[5];
-             for (int i=0; i<arr8.Length; i++)
-             {
-                 arr8[i] = int.Parse(Console.ReadLine());
-             }
-             for (int i = 0 , j=arr8.Length -1; i < arr8.Length; i++ , j--)
-             {
-                 reverseArr8[i] = arr8[j];
-             }
-             for (int i = 0; i < arr8.Length; i++)
-             {
-                 Console.WriteLine(arr8[i] + " , " + reverseArr8[i]);
-             }
-            //----------------------------------------------------------------------------------------------
+            //Q8.2
+              int i = 25;
+              while ( i <= 50 )
+              {
+                  if (i % 5 == 0 && i % 7 == 0)
+                  {
+                      Console.WriteLine(i);
+                  }
+                  i++;
+              }
+            //-----------------------------------------------------------------------------------------------------------
             //Q9
-             int[] arr9 = new int[5];
-            for (int i = 0; i < arr9.Length; i++)
+              int number, sum=0;
+              Console.WriteLine("Enter number : ");
+              number = int.Parse(Console.ReadLine());
+              while (number != 0)
+              {
+                  sum = sum + number % 10;
+                  number = number / 10;
+              }
+              Console.WriteLine("Sum of digits = " + sum);
+
+            //-----------------------------------------------------------------------------------------------------------
+            //Q10
+              int number;
+              Console.WriteLine("Enter 70 numbers : ");
+              for(int i = 0;i<70; i++)
+              {
+                  number = int.Parse(Console.ReadLine());
+                  if(number % 3 == 0)
+                  {
+                      Console.WriteLine(number);
+                  }
+              }
+
+            //-----------------------------------------------------------------------------------------------------------
+            //Q11
+             int numberLicense;
+             int reachTime;
+             int count = 0;
+             for(int i = 0; i < 40; i++)
+             {
+                 Console.Write("Enter the number license : ");
+                 numberLicense = int.Parse(Console.ReadLine());
+                 Console.Write("\nEnter the time that the car need to reach : ");
+                 reachTime = int.Parse(Console.ReadLine());
+                 if(reachTime > 5)
+                 {
+                     Console.WriteLine("Can't particpate in the race !!");
+                 }
+                 if(reachTime <= 4)
+                 {
+                     Console.WriteLine("Car with number " + numberLicense + " needs " + reachTime + " min to reach");
+                     count++;
+                 }
+             }
+             Console.WriteLine("The number of the cars that need 4 min to reach is : " + count);
+            //-----------------------------------------------------------------------------------------------------------
+            //Q12
+            int box1 = 0, box2 = 0, box3 = 0;
+            int appleWight = 1;
+            while(box1<=40 && box2<=30 && box3 <= 25 || appleWight == 0)
             {
-                arr9[i] = int.Parse(Console.ReadLine());
+                appleWight = int.Parse(Console.ReadLine());
+                if(appleWight >= 10 && appleWight <= 30)
+                {
+                    Console.WriteLine("This Apple in BOX 1");
+                    box1++;
+                }
+                else
+                {
+                    if (appleWight >= 31 && appleWight <= 50)
+                    {
+                        Console.WriteLine("This Apple in BOX 2");
+                        box2++;
+                    }
+                    else
+                    {
+                        if (appleWight > 50)
+                        {
+                            Console.WriteLine("This Apple in BOX 3");
+                            box3++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Illigal apple weight");
+                        }
+                    }
+                }
             }
-            int temp = arr9[0];
-            for (int i = 0; i < arr9.Length-1; i++)
-            {
-                arr9[i] = arr9[i + 1];
-            }
-            arr9[arr9.Length - 1] = temp;
-            Console.WriteLine("Shifted array :");
-            for (int i = 0; i < arr9.Length; i++)
-            {
-                Console.WriteLine(arr9[i]);
-            }
+            Console.WriteLine("Box 1 = {0}, Box 2 = {1}, Box 3 = {2}", box1, box2, box3);
+
+       //-----------------------------------------------------------------------------------------------------------
         }
     }
 }
