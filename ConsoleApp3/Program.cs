@@ -7,7 +7,7 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             //Q1 
-            /* int[] arr1 = new int[3];
+             int[] arr1 = new int[3];
              int sum1 = 0;
              Console.WriteLine("Enter 3 numbers :");
              for(int i=0; i<arr1.Length; i++)
@@ -18,18 +18,18 @@ namespace ConsoleApp3
                      sum1 = sum1 + arr1[i];
                  }
              }
-             Console.WriteLine(" Sum  = {0}", sum1);*/
+             Console.WriteLine(" Sum  = {0}", sum1);
             //----------------------------------------------------------------------------------------------
             //Q2
-            /*    String[] animalsArr = { "Dog", "Cat", "Fox", "Elephant" };
+                String[] animalsArr = { "Dog", "Cat", "Fox", "Elephant" };
                 String[] copyAnimalsArr = new string[3];
                 for(int i=0; i< animalsArr.Length; i++)
                 {
                     copyAnimalsArr[i] = animalsArr[i];
-                }*/
+                }
             //----------------------------------------------------------------------------------------------
             //Q3
-            /* int[] numbersArr = new int[5];
+             int[] numbersArr = new int[5];
              int[] oddsArr = new int[5];
              int[] evenArr = new int[5];
 
@@ -62,10 +62,10 @@ namespace ConsoleApp3
                      Console.WriteLine(oddsArr[i]);
                  }
              }
-            */
+            
             //----------------------------------------------------------------------------------------------
             //Q4
-            /*  int[] arr4 = { 2, 3, 4, 5, 6 };
+              int[] arr4 = { 2, 3, 4, 5, 6 };
               for(int i = 0; i<arr4.Length; i++)
               {
                   arr4[i] = 2 * arr4[i];
@@ -74,10 +74,10 @@ namespace ConsoleApp3
               for (int i = 0; i < arr4.Length; i++)
               {
                   Console.Write(arr4[i] + " ");
-              }*/
+              }
             //----------------------------------------------------------------------------------------------
             //Q5
-            /*  int[] arr5 = { 2, 3, 4, 5, 6 };
+              int[] arr5 = { 2, 3, 4, 5, 6 };
               for (int i = 0; i < arr5.Length; i++)
               {
                   arr5[i] = 2 * arr5[i];
@@ -86,10 +86,10 @@ namespace ConsoleApp3
               for (int i = arr5.Length-1; i >= 0 ; i--)
               {
                   Console.Write(arr5[i] + " ");
-              }*/
+              }
             //----------------------------------------------------------------------------------------------
             //Q6
-            /*  int[] arr6 = { 2, 3, 4, 5, 6 };
+              int[] arr6 = { 2, 3, 4, 5, 6 };
               int max6 = arr6[0];
               int min6 = arr6[0];
               //هون مندور على اكبر قيمة
@@ -108,19 +108,19 @@ namespace ConsoleApp3
                       min6 = arr6[i];
                   }
               }
-              Console.WriteLine("Max number = {0}, Min number = {1} ", max6, min6);*/
+              Console.WriteLine("Max number = {0}, Min number = {1} ", max6, min6);
             //----------------------------------------------------------------------------------------------
             //Q7
-            /* int[] arr7 = { 2, 3, 4, 5, 6 };
+             int[] arr7 = { 2, 3, 4, 5, 6 };
              int sum = 0;
              for (int i = 0; i < arr7.Length; i++)
              {
                  sum = sum +arr7[i];
              }
-             Console.WriteLine("Sum = " + sum + " The avg = " + (double)sum / arr7.Length);*/
+             Console.WriteLine("Sum = " + sum + " The avg = " + (double)sum / arr7.Length);
             //----------------------------------------------------------------------------------------------
             //Q8
-            /* int[] arr8 = new int[5];
+             int[] arr8 = new int[5];
              int[] reverseArr8 = new int[5];
              for (int i=0; i<arr8.Length; i++)
              {
@@ -133,7 +133,7 @@ namespace ConsoleApp3
              for (int i = 0; i < arr8.Length; i++)
              {
                  Console.WriteLine(arr8[i] + " , " + reverseArr8[i]);
-             }*/
+             }
             //----------------------------------------------------------------------------------------------
             //Q9
              int[] arr9 = new int[5];
