@@ -147,10 +147,10 @@ namespace ConsoleApp3
             //Q12
             int box1 = 0, box2 = 0, box3 = 0;
             int appleWight = 1;
-            while(box1<=40 && box2<=30 && box3 <= 25 || appleWight == 0)
+            while(box1<=40 && box2<=30 && box3 <= 25 && appleWight != 0)
             {
                 appleWight = int.Parse(Console.ReadLine());
-                if(appleWight >= 10 && appleWight <= 30)
+                if (appleWight >= 10 && appleWight <= 30)
                 {
                     Console.WriteLine("This Apple in BOX 1");
                     box1++;
